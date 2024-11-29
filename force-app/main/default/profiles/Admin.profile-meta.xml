@@ -4,6 +4,16 @@
     <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>
+        <field>JPMC__c.Quantity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>JPMC__c.Scope__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>JPMC__c.Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
