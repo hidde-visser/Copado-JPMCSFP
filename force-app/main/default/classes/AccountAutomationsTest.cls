@@ -45,4 +45,4 @@ private class AccountAutomationsTest {
         System.assertEquals('www.copa.do', acc.Website, 'Default website is www.copa.do');
     }
 
-}
+} 
