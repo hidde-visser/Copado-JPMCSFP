@@ -8,6 +8,11 @@
 .localdevserver/
 deploy-options.json
 
+.code/
+.vscode/
+.idea/
+.copado/
+
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
 
@@ -43,5 +48,3 @@ $RECYCLE.BIN/
 **/__pycache__/
 **/.venv/
 **/venv/
-
-.copado
