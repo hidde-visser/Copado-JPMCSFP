@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>62.0</apiVersion>
+    <description>Toggle validation added</description>
     <environments>Default</environments>
     <interviewLabel>JPMCDataEntryScreenFlow {!$Flow.CurrentDateTime}</interviewLabel>
     <label>JPMCDataEntryScreenFlow</label>
@@ -45,6 +46,36 @@
             <name>ConfirmText</name>
             <fieldText>&lt;p&gt;Are you sure you want to create this new JPMC record?&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>DoubleConf</name>
+            <extensionName>flowruntime:toggle</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>messageToggleActive</name>
+                <value>
+                    <stringValue>Yes</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Sure?</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>messageToggleInactive</name>
+                <value>
+                    <stringValue>No</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <validationRule>
+                <errorMessage>&lt;p&gt;Hey you must say yes!&lt;/p&gt;</errorMessage>
+                <formulaExpression>{!DoubleConf.value}</formulaExpression>
+            </validationRule>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
@@ -99,7 +130,7 @@
             <targetReference>FirstScreen</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>NewJPMCObject</name>
         <dataType>SObject</dataType>
