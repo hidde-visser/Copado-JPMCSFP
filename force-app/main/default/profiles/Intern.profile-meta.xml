@@ -200,6 +200,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>JPMC__c.Completion__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>JPMC__c.Price_Per_Unit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>JPMC__c.Quantity__c</field>
         <readable>true</readable>
     </fieldPermissions>
