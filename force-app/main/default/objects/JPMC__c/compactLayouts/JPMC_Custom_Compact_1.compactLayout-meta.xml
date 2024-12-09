@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JPMC_Custom_Compact_1</fullName>
+    <fields>Name</fields>
+    <fields>Quantity__c</fields>
+    <fields>Price_Per_Unit__c</fields>
+    <fields>Scope__c</fields>
+    <fields>Type__c</fields>
+    <fields>OwnerId</fields>
+    <label>JPMC Custom Compact 1</label>
+</CompactLayout>
